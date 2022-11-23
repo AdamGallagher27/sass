@@ -1,6 +1,39 @@
 // import functions
-@import "../node_modules/bootstrap/scss/";
+@import "../node_modules/bootstrap/scss/functions";
+
+// import font
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 
-// import bootsrap
+
+// my theme colours
+$primary: rgb(85, 218, 142);
+
+
+// fonts (must be before vairable / mixin import)
+$font-family-base: "IBM Plex Mono";
+
+
+// varaibles
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+// custom colours
+$custom-colors: (   
+    "contrast": rgb(171, 21, 176),
+);
+
+
+// radius
+$border-radius:               10rem;
+$border-radius-sm:            .2rem;
+$border-radius-lg:            .3rem;
+$border-radius-pill:          50rem;
+
+
+$theme-colors: map-merge($theme-colors , $custom-colors );
+$theme-colors: map-remove($theme-colors, "danger", "warning", "success");
+
+// import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

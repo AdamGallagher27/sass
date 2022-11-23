@@ -6,13 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Bootstrap Layout Exercise</title>
 	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
 	<!-- nav bar -->
+    <!-- bg-danger doesnt exist -->
+
 	<nav class="
         navbar navbar-expand-lg navbar-light
-        bg-primary
+        bg-contrast
         navbar-dark
         border-bottom border-white border-2
       ">
@@ -116,8 +119,15 @@
 			</div>
 		</div>
 		<!-- star rating row -->
-		<div class="container-fluid border rounded mt-5">
-			<img src="images/images/image_1.png" alt="5 star rating" class="img-fluid mx-auto d-block">
+		<div class="container-fluid border mt-5 rounded-pill">
+			<!-- <img src="images/images/image_1.png" alt="5 star rating" class="img-fluid mx-auto d-block"> -->
+            <ul>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </ul>
 			<div class="row ">
 				<div class="col-md-4 text-center">
 					<h3>2000+
